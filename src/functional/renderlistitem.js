@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 const RenderListItem = props => (
     <div>
       <h3>{props.location.state.list_item.text}</h3>
@@ -12,8 +11,6 @@ const RenderListItem = props => (
       </div>
     </div>
 );
-
-
 
 
 export default RenderListItem;
