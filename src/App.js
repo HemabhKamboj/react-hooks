@@ -6,13 +6,11 @@ import * as Reducer1 from './store/hooks_state/reducer1_hooks';
 import * as UserReducer from './store/hooks_state/user_reducer_hooks';
 
 
-
 const App = () => {
-  const [valueGlobal, setValueGlobal] = useState(0)
 
+  const [valueGlobal, setValueGlobal] = useState(0)
   const [stateReducer1, dispatchReducer1] = useReducer(Reducer1.Reducer1, Reducer1.initialState)
   const [stateContext, dispatchContext] = useReducer(UserReducer.UserReducer, UserReducer.initialState)
-
   const incrementValueGlobal = () => {
     setValueGlobal(valueGlobal + 1 )
   }
